@@ -1,0 +1,109 @@
+[{
+        "linuxVersion": "3.10.0-327.el7.x86_64",
+        "users": ["vagrant"],
+        "diskSpace": [{
+                "mountPoint": "/",
+                "pct_full": "4%"
+            }, {
+                "mountPoint": "/dev",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/dev/shm",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/run",
+                "pct_full": "2%"
+            }, {
+                "mountPoint": "/sys/fs/cgroup",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/boot",
+                "pct_full": "25%"
+            }, {
+                "mountPoint": "/vagrant",
+                "pct_full": "20%"
+            }, {
+                "mountPoint": "/tmp/vagrant-chef/31e1c0c20099bbd9a435c770dc1a49b3/cookbooks",
+                "pct_full": "20%"
+            }, {
+                "mountPoint": "/run/user/1000",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/run/user/0",
+                "pct_full": "0%"
+            }],
+        "serverName": "webserver-001",
+        "serverType": "Web server",
+        "serverTime": "Sun 19 Feb 16:37:37 UTC 2017",
+        "currentVersion": [["nginx-1.10.0-1.el7.ngx.x86_64", "nginx_1_10_1"]]
+    }, {
+        "linuxVersion": "3.10.0-327.el7.x86_64",
+        "users": ["vagrant"],
+        "diskSpace": [{
+                "mountPoint": "/",
+                "pct_full": "3%"
+            }, {
+                "mountPoint": "/dev",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/dev/shm",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/run",
+                "pct_full": "2%"
+            }, {
+                "mountPoint": "/sys/fs/cgroup",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/boot",
+                "pct_full": "25%"
+            }, {
+                "mountPoint": "/vagrant",
+                "pct_full": "20%"
+            }, {
+                "mountPoint": "/run/user/0",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/run/user/1000",
+                "pct_full": "0%"
+            }],
+        "serverName": "server-001",
+        "serverType": "Node",
+        "serverTime": "Sun 19 Feb 16:41:47 UTC 2017",
+        "currentVersion": [["", []]]
+    }, {
+        "linuxVersion": "3.10.0-327.el7.x86_64",
+        "users": ["vagrant"],
+        "diskSpace": [{
+                "mountPoint": "/",
+                "pct_full": "3%"
+            }, {
+                "mountPoint": "/dev",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/dev/shm",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/run",
+                "pct_full": "2%"
+            }, {
+                "mountPoint": "/sys/fs/cgroup",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/boot",
+                "pct_full": "25%"
+            }, {
+                "mountPoint": "/vagrant",
+                "pct_full": "20%"
+            }, {
+                "mountPoint": "/run/user/0",
+                "pct_full": "0%"
+            }, {
+                "mountPoint": "/run/user/1000",
+                "pct_full": "0%"
+            }],
+        "serverName": "server-002",
+        "serverType": "Node",
+        "serverTime": "Sun 19 Feb 16:42:35 UTC 2017",
+        "currentVersion": [["", []]]
+    }]

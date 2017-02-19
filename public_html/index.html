@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ServerWatch</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body ng-app="serverWatch" ng-controller="MainCtrl as ctrl" ng-cloak>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="heading data">{{ctrl.project}}</h1>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="heading data">{{ctrl.env}}</h1>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="heading data"></h1>
+                </div>
+            </div>
+            <div class="row hdivide">
+                <div class="col-md-4 pad" ng-repeat="server in ctrl.server_data">
+                    <div class="inner well">
+                    <div class="row heading">
+                        <div class="col-md-12 data">
+                            <h4>{{server.serverType}}</h4>
+                        </div>
+                        <div class="col-md-12 data">
+                            <h4>{{server.serverName}}</h4>
+                        </div>
+                        <div class="col-md-12 data">
+                            <h4>{{server.serverTime}}</h4>
+                        </div>
+                       <hr /> 
+                </div>
+                    <div class="row hdivide">
+                        <div class="col-md-6 vdivide data">
+                            <h6 class="heading">Disk space</h6>
+                            <p ng-repeat="disk in server.diskSpace">{{disk.pct_full}} {{disk.mountPoint}}</p>
+                        </div>
+                        <div class="col-md-6 right data">
+                            <h6 class="heading">Current Users</h6>
+                            <p ng-repeat="user in server.users">{{user}}</p>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="row hdivide">
+                        <div class="col-md-12 heading">
+                        <h6>Server Status</h6>
+                        </div>
+                        <div class="col-md-12">
+                            Application Status
+                        </div>
+                        <div class="col-md-12">
+                            Connectivity
+                        </div>
+                    </div>
+                    <div class="row hdivide">
+                        <div class="col-md-12">
+                            <h6>Application versions</h6>
+                        </div>
+                        <div class="col-md-12 data">
+                            <p>Kernel version: {{server.linuxVersion}}</p>
+                        </div>
+                        <div class="col-md-12 data">
+                            <p>Application rpm: {{server.currentVersion[0][0]}}</p>
+                            <p>Application package: {{server.currentVersion[0][1]}}</p>
+                        </div>
+                    </div> 
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <script src="js/libs/angular.js/angular.min.js" type="text/javascript"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
